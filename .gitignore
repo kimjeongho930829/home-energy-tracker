@@ -1,0 +1,35 @@
+# OS compiled source
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# IntelliJ IDEA
+.idea/
+*.iws
+*.iml
+*.ipr
+out/
+
+# Visual Studio Code
+.vscode/
+*.code-workspace
+
+# Java & Build Tools
+**/target/
+**/build/
+.gradle/
+**/bin/
+
+# Local Environment Variables & Secrets
+.env
+.env.local
+.env.*.local
+*.log
+
+# Docker/Databases
+docker/mysql/data/
+**/data/
