@@ -33,3 +33,4 @@ out/
 # Docker/Databases
 docker/mysql/data/
 **/data/
+influxdb_data/
