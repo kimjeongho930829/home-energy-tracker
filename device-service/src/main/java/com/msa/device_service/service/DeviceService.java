@@ -54,6 +54,13 @@ public class DeviceService {
         deviceRepository.deleteById(id);
     }
 
+    public List<DeviceDto> getAllDevicesByUserId(Long userId) {
+        List<Device> devices = deviceRepository.findAllByUserId(userId);
+        return devices.stream()
+                .map(this::mapToDto)
+                .toList();
+    }
+
     private DeviceDto mapToDto(Device device) {
         DeviceDto dto = new DeviceDto();
         dto.setId(device.getId());
