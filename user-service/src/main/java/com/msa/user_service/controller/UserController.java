@@ -31,7 +31,7 @@ public class UserController {
         return ResponseEntity.ok(userDto);
     }
 
-    @PutMapping
+    @PutMapping("/{id}")
     public ResponseEntity<String> updateUser(@PathVariable Long id, @RequestBody UserDto userDto) {
         try {
             userService.updateUser(id, userDto);
@@ -41,7 +41,7 @@ public class UserController {
         }
     }
 
-    @DeleteMapping
+    @DeleteMapping("/{id}")
     public ResponseEntity<Void> deleteUser(@PathVariable Long id) {
         try {
             userService.deleteUser(id);
