@@ -34,3 +34,4 @@ out/
 docker/mysql/data/
 **/data/
 influxdb_data/
+volume-data/
